@@ -13,15 +13,18 @@ img:hover{
     transition: box-shadow 4s;
 }
 
-img{
-    width: 20px;
+#saveform {
+    width: 200px;
     height: 200px;
-    display: inline;
+    /* display: inline; */
     margin-left: auto;
     margin-right: auto;
     
 }
 
+.crystals {
+    background-color: blueviolet;
+}
 
 body{
    
