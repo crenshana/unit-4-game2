@@ -6,13 +6,13 @@ var previous = 0;
 var resetAndStart = function(){
     $(".crystal").empty();
 
-    var images = [
+    //var images = [
     
-        "https://gamepedia.cursecdn.com/atlas_gamepedia_en/3/31/Crystal.png",
-        "https://img.pngmix.com/pm/crystals/crystals_005.png",
-        "https://img.pngmix.com/pm/crystals/crystals_004.png",
-        "https://media.giphy.com/media/fQMmshQtGmqXxwHoO1/giphy.gif"
-    ];
+      //  "https://gamepedia.cursecdn.com/atlas_gamepedia_en/3/31/Crystal.png",
+      //  "https://img.pngmix.com/pm/crystals/crystals_005.png",
+      //  "https://img.pngmix.com/pm/crystals/crystals_004.png",
+      //  "https://media.giphy.com/media/fQMmshQtGmqXxwHoO1/giphy.gif"
+    //];
     
 
 
@@ -64,7 +64,8 @@ resetAndStart();
 
 var crystal = $("<div>");
         crystal.attr({
-            "class":"crystals", "data-random": random
+            "class":"crystals",
+             "data-random": random
 
         });
 
@@ -86,6 +87,7 @@ $(document).on('click',"crystals", function() {
     if (previous > random_answer) {
 
     lose++;
+    alert("Loser");
 
     $("#lose").html("Loser!: " + lose );
     previous = 0;
@@ -99,6 +101,7 @@ else if (previous === random_answer){
 
 
     win++;
+    alert("Winner");
     $("#win").html("Winner!: " + win);
 
     previous = 0;
